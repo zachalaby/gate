@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FILTERGRAPH>
+  <FILTER uid="7" x="0.54625000000000001332" y="0.70740740740740737369"
+          uiLastX_Generic="341" uiLastY_Generic="350" uiopen_Generic="0"
+          uiLastX_Programs="457" uiLastY_Programs="485" uiopen_Programs="0"
+          uiLastX_Parameters="307" uiLastY_Parameters="9" uiopen_Parameters="0"
+          uiLastX_="395" uiLastY_="250" uiopen_="0">
+    <PLUGIN name="Audio Output" descriptiveName="" format="Internal" category="I/O devices"
+            manufacturer="ROLI Ltd." version="1.0" file="" uid="724248cb"
+            isInstrument="0" fileTime="0" infoUpdateTime="0" numInputs="2"
+            numOutputs="0" isShell="0"/>
+    <STATE>0.</STATE>
+  </FILTER>
+  <FILTER uid="9" x="0.37249999999999999778" y="0.15925925925925926707"
+          uiLastX_Generic="31" uiLastY_Generic="17" uiopen_Generic="0">
+    <PLUGIN name="Audio Input" descriptiveName="" format="Internal" category="I/O devices"
+            manufacturer="ROLI Ltd." version="1.0" file="" uid="246006c0"
+            isInstrument="0" fileTime="0" infoUpdateTime="0" numInputs="0"
+            numOutputs="2" isShell="0"/>
+    <STATE>0.</STATE>
+  </FILTER>
+</FILTERGRAPH>

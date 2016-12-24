@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>GateAndKey (AU).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>GateAndKey (All).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>GateAndKey (Shared Code).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>GateAndKey (VST).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>076691C8B4ADDB0919E25348</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>75A1DF45ED94A6CEAC926B22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B3D7FC82D4248C7DF402307F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C680E2F07D7DBD29066A7A69</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
