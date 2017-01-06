@@ -21,6 +21,7 @@ static const unsigned char temp_binary_data_0[] =
 "\r\n"
 "#include \"PluginProcessor.h\"\r\n"
 "#include \"PluginEditor.h\"\r\n"
+"#include \"./../../../lib/fftw/fftw-3.3.5/api/fftw3.h\"\r\n"
 "\r\n"
 "\r\n"
 "//==============================================================================\r\n"
@@ -253,7 +254,7 @@ const char* getNamedResource (const char* resourceNameUTF8, int& numBytes) throw
 
     switch (hash)
     {
-        case 0x687677e3:  numBytes = 5860; return PluginProcessor_cpp;
+        case 0x687677e3:  numBytes = 5915; return PluginProcessor_cpp;
         case 0xd36ebf84:  numBytes = 1300; return PluginEditor_cpp;
         default: break;
     }

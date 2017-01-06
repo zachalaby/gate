@@ -10,6 +10,8 @@
 
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
+//#include "./../../../lib/fftw/fftw-3.3.5/api/fftw3.h"
+
 
 
 //==============================================================================
@@ -121,11 +123,12 @@ bool GateAndKeyAudioProcessor::isBusesLayoutSupported (const BusesLayout& layout
 }
 #endif
 
-void GateAndKeyAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuffer& midiMessages)
-{
+void GateAndKeyAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuffer& midiMessages) {
     const int totalNumInputChannels  = getTotalNumInputChannels();
     const int totalNumOutputChannels = getTotalNumOutputChannels();
-
+    const float thresh = .05;
+    
+    
     // In case we have more outputs than inputs, this code clears any output
     // channels that didn't contain input data, (because these aren't
     // guaranteed to be empty - they may contain garbage).
@@ -137,15 +140,26 @@ void GateAndKeyAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuff
 
     // This is the place where you'd normally do the guts of your plugin's
     // audio processing...
-    for (int channel = 0; channel < totalNumInputChannels; ++channel)
-    {
-        float* channelData = buffer.getWritePointer (channel);
-        
-        for(int sample = 0; sample < buffer.getNumSamples(); sample++) {
-            
-            channelData[sample] = 0.0f;
-            
+    
+    
+    
+    
+    for (int channel = 0; channel < totalNumInputChannels; ++channel) {
+        if(buffer.getRMSLevel(channel, 0, buffer.getNumSamples()) < thresh) {
+            std::cout << "cleared";
+            buffer.clear();
+        } else {
+            std::cout << buffer.getRMSLevel(channel, 0, buffer.getNumSamples());
         }
+        
+        
+//        float* channelData = buffer.getWritePointer (channel);
+//        for(int sample = 0; sample < buffer.getNumSamples(); sample++) {
+//            
+//
+//            channelData[sample] = 0.0f;
+//            
+//        }
         
     }
 }

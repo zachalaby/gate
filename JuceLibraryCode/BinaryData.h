@@ -10,7 +10,7 @@
 namespace BinaryData
 {
     extern const char*   PluginProcessor_cpp;
-    const int            PluginProcessor_cppSize = 5860;
+    const int            PluginProcessor_cppSize = 5915;
 
     extern const char*   PluginEditor_cpp;
     const int            PluginEditor_cppSize = 1300;
